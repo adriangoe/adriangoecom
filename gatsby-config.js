@@ -5,5 +5,12 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    name: 'Adrian Goedeckemeyer',
+    tagline: 'My Web Portfolio 💪'
+  },
+  plugins: [
+  	'gatsby-plugin-sass',
+  	'gatsby-plugin-typescript',
+  ]
 }

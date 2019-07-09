@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "adriangoedotcom",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "My new portfolio with Gatsby + TypeScript",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -14,17 +14,21 @@
   },
   "dependencies": {
     "gatsby": "^2.13.9",
+    "gatsby-plugin-sass": "^2.1.0",
+    "gatsby-plugin-typescript": "^2.1.0",
+    "node-sass": "^4.12.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "typescript": "^3.5.3"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/adriangoe/adriangoecom"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/adriangoe/adriangoecom/issues"
   }
 }
