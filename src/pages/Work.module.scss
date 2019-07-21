@@ -1,0 +1,144 @@
+$break-medium: 960px;
+$break-small: 540px;
+
+.content {
+  max-width: 65rem;
+  width: 80%;
+  margin: 4em auto;
+  min-height: 95vh;
+
+  .wrapper {
+    div:last-of-type {
+      border-bottom: 0px;
+    }
+  }
+}
+
+.project{
+  display:block;
+  border-bottom:1px solid black;
+  margin-bottom:2.8em;
+  position: relative;
+
+  @media (max-width: $break-small) {
+    margin-bottom: 2em;
+  }
+
+  h2{
+    width: 90%;
+    margin-top: 0.6em;
+    font-size:2.4em;
+    margin-bottom:0.2em;
+    font-family: 'DM Sans', sans-serif;
+
+    @media (max-width: $break-small) {
+      margin: 0.2em 0;
+    }
+
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    color: inherit;
+
+    &:before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      right: 100%;
+      bottom: 0;
+      left: 0;
+      background: #42f5b6;
+      transition: opacity 0.5s ease-in-out;
+      transition: right 0.5s ease-in-out;
+      opacity:0;
+      z-index:-1;
+    }
+
+    &:hover::before {
+      opacity: 0.8;
+      right: 0%;
+    }
+  }
+
+  .name {
+    text-decoration:none;
+    color:inherit;
+  }
+
+  .description {
+    font-size: 1.5em;
+    margin-top: 0;
+    width: 70%;
+    display: inline-block;
+  }
+
+  .time {
+    font-size:1.2em;
+    color:#5f6c7a;
+    margin-bottom:0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .tech {
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 0.8em;
+
+    .tag {
+      display: inline-block;
+      font-weight:600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 1px 4px;
+      color: #5f6c7a;
+      border-radius: 2px;
+      background: #edeff2;
+      margin: 2px;
+    }
+
+    .github {
+      padding: .2em;
+      display: inline-flex;
+      align-items: center;
+      transition: color .2s ease;
+      margin: 2px;
+
+      &:hover {
+        color: initial;
+      }
+
+      svg {
+        margin-right: 4px;
+      }
+    }
+  }
+
+  .arrow {
+    color: black;
+    position: absolute;
+    right: 0;
+    top: 2.4em;
+    width: 3.5em;
+    height: 3.5em;
+
+    path {
+      fill: black;
+      transition: fill .5s ease;
+    }
+
+    &:hover path {
+      fill: grey;
+    }
+
+    &:hover::before {
+      opacity: 0;
+    }
+  }
+
+}

@@ -1,0 +1,50 @@
+$break-medium: 960px;
+$break-small: 540px;
+
+.links {
+  display: block;
+  text-align: left;
+  border-top: 1px solid #bdbdbd;
+  width: 100%;
+
+  a {
+    font-size: 1.2em;
+    width: 20%;
+    padding: 1em 0 0;
+    float: left;
+    color: #919ca8;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: flex;
+    align-items: center;
+    transition: color .3s ease;
+
+    svg {
+      margin-right: .3em;
+    }
+
+    @media (max-width: $break-medium) {
+      width: 25%;
+      text-align: center;
+    }
+
+    @media (max-width: $break-small) {
+      display: inline-block;
+      font-size: 1.4em;
+      height: 1.2em;
+      width: 100%;
+      float: initial;
+    }
+
+    &:hover {
+      color:#636363;
+    }
+
+    &:focus {
+      color:#8799ff;
+    }
+  }
+}
+

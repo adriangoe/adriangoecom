@@ -1,15 +1,27 @@
+$break-medium: 960px;
+$break-small: 540px;
 
-.Container {
-  max-width: 60rem;
-  margin: 3rem auto 0;
-  font-family: sans-serif;
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
-  h1 {
-    color: #555;
-  }
+p{
+  margin-block-end: 0.6em;
+}
+p+p {
+  margin-block-start: 0;
+}
 
-  p {
-    color: #aaa;
-  }
+body {
+	@media (max-width: $break-medium) {
+		font-size: 12px;
+	}
+}
 
+.wrapper {
+ min-height: 100vh; /* will cover the 100% of viewport */
+ overflow: hidden;
+ display: block;
+ position: relative;
+ padding-bottom: 4em; /* height of your footer */
 }

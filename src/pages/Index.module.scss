@@ -1,0 +1,92 @@
+$break-medium: 960px;
+$break-small: 540px;
+
+.content {
+  max-width: 65rem;
+  width: 80%;
+  margin: 4em auto;
+  min-height: 95vh;
+
+  h2 {
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+    font-family: 'DM Sans', 'sans-serif';
+    font-size: 3.2em;
+    font-weight: 700;
+    line-height: 1;
+
+    @media (max-width: $break-small) {
+      text-align: center;
+      font-size: 2.5em;
+    }
+  }
+
+  p {
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1.5;
+
+    @media (max-width: $break-medium) {
+      font-size: 1.6em;
+    }
+  }
+
+  .wrapper{
+    display: inline-block;
+    width: 60%;
+    padding-bottom: 1em;
+    // border-bottom: 1px solid #bdbdbd;
+
+    a {
+      text-decoration: none;
+      font-weight: 600;
+      position: relative;
+      color: inherit;
+
+      &:before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        right: 100%;
+        bottom: 0;
+        left: 0;
+        background: #8799ff;
+        transition: opacity 0.5s ease-in-out;
+        transition: right 0.5s ease-in-out;
+        opacity:0;
+        z-index:-1;
+      }
+
+      &:hover::before {
+        opacity: 0.8;
+        right: 0%;
+      }
+    }
+
+    @media (max-width: $break-medium) {
+      width: 58%;
+      // border-bottom: 0px;
+    }
+
+    @media (max-width: $break-small) {
+      width: 100%;
+    }
+  }
+
+  .headshot {
+    width: 36%;
+    float: right;
+    margin: 4em 0;
+
+    @media (max-width: $break-medium) {
+      width: 38%;
+      margin: 2.4em 0;
+    }
+
+    @media (max-width: $break-small) {
+      width: 100%;
+      float: initial;
+      margin: 0.5em 0;
+    }
+  }
+}
