@@ -5,10 +5,11 @@ $break-small: 540px;
   bottom: 0;
   width: 100%;
   background-color: #444445;
-  height: 4em;
+  min-height: 5em;
   color: #fafafa;
 
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 

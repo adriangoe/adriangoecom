@@ -10,6 +10,7 @@ export default class Footer extends React.Component<{}, {}> {
         <a href="https://www.iubenda.com/privacy-policy/8161934" className="iubenda-black iubenda-embed" title="Privacy Policy">
           Privacy Policy
         </a>
+        <div id="wcb" className="wcb wcb-d carbonbadge"/>
       </div>
       </React.Fragment>
     )
@@ -25,5 +26,11 @@ export default class Footer extends React.Component<{}, {}> {
 
     s.src = 'https://cdn.iubenda.com/iubenda.js';
     tag.parentNode.insertBefore(s, tag);
+
+    const s2 = d.createElement('script');
+    const tag2 = d.getElementsByTagName('script')[0];
+
+    s2.src = 'https://unpkg.com/website-carbon-badges@^1/b.min.js';
+    tag2.parentNode.insertBefore(s2, tag2);
   }
 }
