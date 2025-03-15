@@ -48,20 +48,8 @@ export default class IndexPage extends React.Component<IndexPageProps, {}> {
       <Layout>
         <Helmet title={name} />
         <Header />
-
         <div className={styles.content}>
-          <Img className={styles.headshot}
-               fluid={headshot.fluid}
-               alt={name} />
-          <div className={styles.wrapper}>
-            <h2>I'm {name},</h2>
-            <p>a Software Engineer at <a href="https://www.youtube.com">YouTube</a>, passionate about using Machine Learning for Music and Social Impact. I'm also an Inaugural Graduate at the <a href="https://www.minerva.kgi.edu">Minerva Schools at KGI</a>.</p>
-            <p>Check out some of my recent work <Link to="/work">here</Link>.</p>
-            <p>
-              Besides code, I also like to take <a href="https://photos.adriangoe.com">pictures</a>!
-            </p>
-          </div>
-          <Links />
+            <h2>This website is under construction <i class="fa-solid fa-wrench"></i></h2>
         </div>
       </Layout>
     )
