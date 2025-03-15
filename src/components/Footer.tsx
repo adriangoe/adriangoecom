@@ -6,7 +6,7 @@ export default class Footer extends React.Component<{}, {}> {
     return (
       <React.Fragment>
       <div className={styles.footer}>
-        © Adrian Goedeckemeyer, 2024{' '}
+        <p>© Adrian Goedeckemeyer, 2025 <a href="/impressum">Impressum</a></p>
       </div>
       </React.Fragment>
     )
